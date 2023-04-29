@@ -7,7 +7,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 const Header = () => {
 
     const {user, logOut} = useContext(AuthContext)
-    console.log(user);
+    // console.log(user);
 
     const handleLogOut = () => {
         logOut()
@@ -24,7 +24,7 @@ const Header = () => {
             <div>
                 <Link to="/">Shop</Link>
                 <Link to="/orders">Orders</Link>
-                <Link to="/inventory">inventory</Link>
+                <Link to="/inventory">Inventory</Link>
                 <Link to="/login">Login</Link>
                 <Link to="/signup">Sign Up</Link>
                 {
